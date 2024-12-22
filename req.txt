@@ -1,3 +1,0 @@
-run code
-.\myenv\Scripts\Activate
-python d:/files/cadx/model.py
