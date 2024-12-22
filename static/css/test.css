@@ -1,0 +1,102 @@
+:root{
+    --dark-color: #0B1354;
+    --green-color: #20D4D9;
+    --red-color: #ff3150;
+    --section-color: #eff7fa;
+    --pink-color: #F765A3;
+    --white-color: #ffffff;
+    --light-red: #F9D1D1;
+    --lightpink-color: #FFA4B6;
+    --purple-color: #A155B9;
+    /* --back-color: #ec91b3; */
+    --back-color: #ff057a;
+    --blue-color: #165BAA;
+}
+body{
+    font-family: "Roboto", "sans-serif";
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.main-btn, .main-btn-radio{
+    background-color: var(--white-color);
+    color: var(--pink-color);
+    padding: 0.7rem 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.main-btn:hover, .main-btn-radio:hover{
+    color: var(--green-color);
+}
+.main-btn-radio{
+    background-color: var(--blue-color);
+}
+
+.navbar{
+    background-color: var(--pink-color);
+    padding: 1rem 0;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: var(--white-color);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+
+.landing{
+    background-color: var(--pink-color);
+    min-height: calc(100vh - 72px);
+    background-size: cover;
+    background-position: center;
+}
+
+.cards{
+    background-color: var(--pink-color);
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+.card img{
+    max-width: 100px;
+}
+
+.card-radiologists {
+    background-color: #e6f7ff;
+    border-left: 5px solid #007BFF;
+}
+
+.card-women {
+    background-color: #fff5f5;
+    border-left: 5px solid var(--pink-color);
+}
+
+.services {
+    background-color: var(--pink-color);
+    color: var(--white-color)
+}
+.service-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: white;
+    color: var(--lightpink-color)
+}
+.service-box i {
+    color: var(--pink-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--pink-color);
+}

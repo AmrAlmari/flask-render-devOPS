@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Breast Cancer Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Breast Cancer Prediction Results">
+
+    <!-- Prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- Link to styles.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}"> -->
+    <link rel="preconnect" href="https://fonts.google.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/bread_ict.svg') }}">
+
+
+    <!-- FontAwesome for icons -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
+</head>
+
+<body class="w3-pale-blue">
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='images/bread_ict.svg') }}" alt="logo image" width="100"></a>
+          <button class="navbar-toggler"
+           type="button" 
+           data-bs-toggle="collapse" 
+           data-bs-target="#main" 
+           aria-controls="main" 
+           aria-expanded="false" 
+           aria-label="Toggle navigation">
+           <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="{{ url_for('home_view') }}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#">Doctors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="search ps-3 pe-3 d-none d-lg-block">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a class="btn rounded-pill main-btn" href="#">Login</a>
+          </div>
+        </div>
+      </nav>
+    <div class="w3-content card">
+        <div class="w3-center title">
+            <h1 class="space-letters">BREAST CANCER PREDICTION</h1>
+        </div>
+
+        <div class="w3-center">
+            <span class="border border-primary">
+                <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+            </span>
+        </div>
+
+        <div class="w3-center" style="padding-top:30px">
+            <h4 class="pred">Prediction: <span class="mark">{{ label }}</span></h4>
+        </div>
+
+        <div class="add-padding w3-border w3-round w3-pale-blue">
+            <p>Please Note: This is a prototype.</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/all.min.js') }}"></script>
+</body>
+
+</html>

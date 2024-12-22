@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Breast Cancer Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Use the power of Machine Learning to analyze breast cancer.">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+    <link rel="preconnect" href="https://fonts.google.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' crossorigin='anonymous'>
+    <link rel="icon" href="{{ url_for('static', filename='images/bread_ict.svg') }}">
+</head>
+
+<body class="w3-pale-blue">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='images/bread_ict.svg') }}" alt="logo image" width="100"></a>
+          <button class="navbar-toggler"
+           type="button" 
+           data-bs-toggle="collapse" 
+           data-bs-target="#main" 
+           aria-controls="main" 
+           aria-expanded="false" 
+           aria-label="Toggle navigation">
+           <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="{{ url_for('home_view') }}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#">Doctors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="search ps-3 pe-3 d-none d-lg-block">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a class="btn rounded-pill main-btn" href="#">Login</a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="w3-content card">
+        <div class="w3-center title">
+            <h1 class="space-letters"><i class='fas fa-microscope' style='font-size:40px'></i> <b>Breast Cancer Analyzer</b></h1>
+            <h5 class="space-letters w3-text-red">for Histopathology Image Patches</h5>
+            <h5 class="space-letters tag-font w3-text-red"><b>powered by<br> Artificial Intelligence</b></h5>
+        </div>
+
+        <div class="w3-center">
+            <form class="form-inline" action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required class="w3-input w3-border">
+                <input type="submit" class="btn rounded-pill main-btn" value="Predict">
+            </form>
+        </div>
+
+        <div class="add-padding w3-border w3-round w3-pale-blue">
+            <p>Please Note: This is a prototype.</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/all.min.js') }}"></script>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

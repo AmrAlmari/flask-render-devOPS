@@ -1,0 +1,159 @@
+/* CSS for both index.html and predict.html */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --mint-green-color: #ADE8D8;
+    --cyan-color: #20D4D9;
+    --pink-color: #F05BA1;
+    --navy-blue-color: #343B5D;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+    /*--pink-color: #ff56aa;*/
+    --white-color: #ffffff;
+    --back-color: #ec91b3;
+    --blue-color: #007BFF;
+}
+
+.main-btn, .main-btn-radio{
+    background-color: var(--white-color);
+    color: var(--pink-color);
+    padding: 0.7rem 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.main-btn:hover, .main-btn-radio:hover{
+    color: var(--green-color);
+}
+.main-btn-radio{
+    background-color: var(--blue-color);
+}
+
+.navbar{
+    background-color: var(--pink-color);
+    padding: 1rem 0;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: var(--white-color);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+
+.card {
+    max-width: 960px;
+    margin: 200px auto;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: inset -10px -9px 19px 18px rgba(0, 0, 0, 0.1);
+    background-color: rgb(18 11 11 / 22%);
+}
+
+.title {
+    color:  #d9d9d9; 
+}
+
+.btn-submit {
+    background-color: var(--white-color); 
+    border-color: var(--pink-color);
+    color: var(--pink-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 7%;
+
+}
+
+.btn-submit:hover {
+    background-color: #99ccff; /* Darker green on hover */
+}
+
+.space-letters {
+    letter-spacing: 1px;
+}
+
+.w3-center {
+    margin: 20px 0;
+    text-align: center;
+}
+h4.pred{
+    color: white;
+}
+.add-padding {
+    padding: 10px;
+    color: #f4ecec;
+    text-align: center;
+}
+
+.mark {
+    background-color: #99ccff; /* Highlight color for prediction */
+    color: white;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+img.img-thumbnail {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+body {
+   /* background-image: url('bc.jpg'); 
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    background-position: center;  
+    height: 100vh; 
+    margin: 0; 
+    background-attachment: scroll;*/
+    font-family: "Roboto", "sans-serif";
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-color: var(--pink-color); /* Ensure the path to the image is correct */
+    background-size: cover;  /* Make the background image cover the entire viewport */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-position: center;  /* Centers the background image */
+    background-attachment: fixed;  /* Optional: keeps the background fixed during scroll */
+    height: 100vh; /* Ensures the body takes the full height of the viewport */
+    margin: 0; 
+    
+    
+}
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .header h5 {
+        font-size: 1.2em;
+    }
+
+    .nav-links {
+        display: none; /* Hidden by default for mobile */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
