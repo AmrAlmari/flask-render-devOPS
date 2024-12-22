@@ -13,7 +13,6 @@ decorator==5.1.1
 executing==2.1.0
 filelock==3.16.1
 Flask==3.1.0
-Flask-SQLAlchemy==3.1.1
 flatbuffers==24.3.25
 fonttools==4.55.2
 fsspec==2024.10.0
@@ -69,11 +68,6 @@ six==1.17.0
 SQLAlchemy==2.0.36
 stack-data==0.6.3
 sympy==1.13.1
-tensorboard==2.18.0
-tensorboard-data-server==0.7.2
-tensorflow==2.18.0
-tensorflow-io-gcs-filesystem==0.31.0
-tensorflow_intel==2.18.0
 termcolor==2.5.0
 torch==2.5.1
 torchvision==0.20.1
