@@ -53,12 +53,5 @@ gunicorn app:app
 
 ---
 
-### Key Fixes:
-1. Properly formatted code blocks using triple backticks (```).
-2. Fixed the project structure alignment.
-3. Removed unnecessary or duplicate text (e.g., "نسخ" and "تحرير").
-4. Added proper spacing and headings for better readability.
-5. Ensured consistent formatting for commands and steps.
 
-Let me know if you need further adjustments! 🚀
 
