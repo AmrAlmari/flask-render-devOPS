@@ -4,7 +4,7 @@ This repository contains a Flask web application deployed on [Render](https://re
 
 ## 🔗 Live Demo
 🌍 [View the deployed app](https://flask-render-devops-1.onrender.com/)
-![Home Page](./static/images/home.png)
+![Home Page](./static/Images/home.png)
 
 
 ## 📂 Project Structure
