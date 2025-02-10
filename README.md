@@ -14,3 +14,12 @@ flask-render-devOPS/
 │── static/ # Static files (CSS, JS)
 │── README.md # Project documentation
 │── .gitignore # Files to ignore in version control
+
+
+## 🚀 Installation & Setup
+Follow these steps to run the Flask app locally:
+
+### 1️⃣ Clone the repository
+```sh
+git clone https://github.com/AmrAlmari/flask-render-devOPS.git
+cd flask-render-devOPS
