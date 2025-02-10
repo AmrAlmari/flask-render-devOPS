@@ -6,7 +6,7 @@ This repository contains a Flask web application deployed on [Render](https://re
 🌍 [View the deployed app](https://flask-render-devops-1.onrender.com/)
 
 ## 📂 Project Structure
-'''plaintext
+```plaintext
 flask-render-devOPS/
 │── app.py # Main Flask application
 │── requirements.txt # Dependencies
