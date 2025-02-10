@@ -7,7 +7,14 @@ This repository contains a Flask-based web application deployed on Render. The p
 - 🖥️ Flask web application
 - 🚀 Deployment on Render
 - 📦 Virtual environment and dependency management
+### 📤 Deployment on Render
+The application is deployed on Render and can be accessed at: 🔗 Live App
 
+Deployment Steps:
+1-Connect the repository to Render.
+2-Set up an automatic deployment from GitHub.
+3-Define environment variables if required.
+4-Deploy the application using Render’s build and deploy service.
 
 ## 🔧 Installation
 
