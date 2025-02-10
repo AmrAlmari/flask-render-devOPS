@@ -23,3 +23,42 @@ Follow these steps to run the Flask app locally:
 ```sh
 git clone https://github.com/AmrAlmari/flask-render-devOPS.git
 cd flask-render-devOPS
+```
+### 2️⃣ Create a virtual environment
+```sh
+python -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate     # On Windows
+```
+### 3️⃣ Install dependencies
+```sh
+pip install -r requirements.txt
+```
+
+## 🛠 Deployment on Render
+This project is deployed using Render. To deploy your own version:
+
+1-Create an account on Render
+2-Connect your GitHub repository
+3-Create a new Web Service
+4-Set the build command:
+```sh
+pip install -r requirements.txt
+```
+5-Set the start command:
+```sh
+gunicorn app:app
+```
+6-Deploy and get your live URL!
+
+---
+
+### Key Fixes:
+1. Properly formatted code blocks using triple backticks (```).
+2. Fixed the project structure alignment.
+3. Removed unnecessary or duplicate text (e.g., "نسخ" and "تحرير").
+4. Added proper spacing and headings for better readability.
+5. Ensured consistent formatting for commands and steps.
+
+Let me know if you need further adjustments! 🚀
+
